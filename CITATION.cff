@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "若引用本书，请使用以下条目。"
+title: "润泽说 道可道之黄帝阴符经·通释"
+abstract: "《黄帝阴符经》三章三十一句逐句通释，李筌三百字本为底，参敦煌残卷。"
+authors:
+  - family-names: "润泽"
+    given-names: ""
+version: 1.0.0
+date-released: 2026-11-15
+license: CC-BY-NC-SA-4.0
+repository-code: "https://github.com/q1z2q3-debug/daokedao-yinfujing"
+url: "https://q1z2q3-debug.github.io/daokedao-yinfujing/"
+keywords:
+  - 阴符经
+  - 黄帝阴符经
+  - 道家
+  - 通释
+  - 三才五蕴太极空杯

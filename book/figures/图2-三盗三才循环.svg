@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 540" width="100%" role="img" aria-label="三盗三才循环图">
+  <defs>
+    <style>
+      .t{font-family:"Noto Serif SC","Songti SC",serif;fill:#25211D;text-anchor:middle}
+      .ttl{font-size:24px;letter-spacing:.14em}
+      .sub{font-size:12.5px;fill:#7C6D5C;letter-spacing:.08em}
+      .n{font-size:19px;letter-spacing:.08em}
+      .lab{font-size:13px;fill:#994433;letter-spacing:.04em}
+      .cap{font-size:14px;fill:#3B352F;letter-spacing:.05em}
+      .ochre{fill:#994433}
+      .rul{stroke:#DCD5C8;stroke-width:1}
+    </style>
+    <marker id="ar" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto">
+      <path d="M0 0 L11 5.5 L0 11 Z" fill="#994433"/>
+    </marker>
+  </defs>
+  <rect width="820" height="540" fill="#FCFAF6"/>
+  <text class="t ttl" x="410" y="44">三 盗 三 才</text>
+  <text class="t sub" x="410" y="68">天地·万物·人　互为盗　循环相资　取用有度</text>
+  <line x1="60" y1="86" x2="760" y2="86" class="rul"/>
+  <path d="M384.0 213.0 Q323.9 249.1 322.7 319.2" fill="none" stroke="#994433" stroke-width="1.8" marker-end="url(#ar)"/>
+  <text class="t lab" x="296.2" y="233.1">万物盗天地之气</text>
+  <path d="M347.7 366.0 Q409.0 400.0 470.3 366.0" fill="none" stroke="#994433" stroke-width="1.8" marker-end="url(#ar)"/>
+  <text class="t lab" x="409.0" y="432.0">人盗万物之养</text>
+  <path d="M498.3 321.0 Q497.1 250.9 437.0 214.8" fill="none" stroke="#994433" stroke-width="1.8" marker-end="url(#ar)"/>
+  <text class="t lab" x="524.8" y="234.9">万物盗人之归</text>
+  <circle cx="410.0" cy="168.0" r="46" fill="#F5EEE1" stroke="#A98B5E"/>
+  <text class="t n" x="410.0" y="175.0">天 地</text>
+  <circle cx="295.7" cy="366.0" r="46" fill="#F5EEE1" stroke="#A98B5E"/>
+  <text class="t n" x="295.7" y="373.0">万 物</text>
+  <circle cx="524.3" cy="366.0" r="46" fill="#F5EEE1" stroke="#A98B5E"/>
+  <text class="t n" x="524.3" y="373.0">人</text>
+  <circle cx="410" cy="288" r="46" fill="none" stroke="#E0D6C4" stroke-dasharray="4 4"/>
+  <text class="t" x="410" y="284" font-size="14" fill="#994433">三盗既宜</text>
+  <text class="t sub" x="410" y="306">三才既安</text>
+  <line x1="60" y1="480" x2="760" y2="480" class="rul"/>
+  <text class="t cap" x="410" y="508">盗非劫掠，是循环取资：取而有还，用而有时</text>
+  <text class="t cap ochre" x="410" y="534">截流则断，壅积则溃——故曰「既宜」</text>
+</svg>

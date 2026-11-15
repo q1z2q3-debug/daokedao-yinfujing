@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23994433'/%3E%3Ctext x='32' y='46' font-size='30' text-anchor='middle' fill='%23F7F4EE' font-family='serif'%3E%E9%99%B8%3C/text%3E%3C/svg%3E">
+<title>润泽说 道可道之黄帝阴符经 · 通释</title>
+<style>
+:root{--paper:#F7F4EE;--paper2:#FCFAF6;--ink:#25211D;--ink2:#3B352F;--ochre:#994433;--brown:#7C6D5C;--line:#DCD5C8;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Noto Serif SC","Songti SC","Source Han Serif SC",serif;
+  -webkit-font-smoothing:antialiased;line-height:1.95;}
+.page{max-width:760px;margin:0 auto;padding:56px 28px 80px;}
+
+.cover{position:relative;margin-bottom:44px;padding:78px 46px 56px;min-height:560px;display:flex;flex-direction:column;justify-content:center;overflow:hidden;
+  border:1px solid var(--line);background:radial-gradient(130% 90% at 50% 0%,#FCFAF6 0%,#F7F4EE 62%,#F1EADB 100%);}
+.cover::before{content:"";position:absolute;inset:13px;border:1px solid #E0D6C4;pointer-events:none;}
+.cover::after{content:"";position:absolute;inset:18px;border:1px solid #EFE7D8;pointer-events:none;}
+.cover .series{font-size:11.5px;letter-spacing:.52em;color:var(--brown);text-align:center;}
+.cover .stage{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px;margin-top:30px;}
+.cover .gatha{writing-mode:vertical-rl;font-size:14px;line-height:2.5;letter-spacing:.2em;color:#6E6153;}
+.cover .gatha.l{justify-self:start;text-align:left;}
+.cover .gatha.r{justify-self:end;text-align:left;}
+.cover .center{text-align:center;}
+.cover h1{writing-mode:vertical-rl;font-size:54px;font-weight:700;letter-spacing:.2em;line-height:1.35;
+  margin:0 auto;color:var(--ink);}
+.cover .sub{margin-top:18px;font-size:13px;color:var(--brown);letter-spacing:.14em;}
+.cover .tag{display:inline-block;margin-top:12px;padding:2px 10px;font-size:11.5px;letter-spacing:.4em;
+  color:var(--ochre);border:1px solid #D8B9AE;}
+.cover .seal{width:46px;height:46px;margin:22px auto 0;background:var(--ochre);color:#FCFAF6;
+  display:grid;place-items:center;font-size:17px;letter-spacing:0;box-shadow:0 0 0 3px #F7F4EE,0 0 0 4px #E2D5C0;}
+.cover .meta{margin-top:30px;padding-top:16px;border-top:1px solid #E6DECF;
+  font-size:11.5px;color:#9C8E7C;letter-spacing:.16em;text-align:center;}
+.cover .meta span:not(:last-child)::after{content:"　·　";color:#C4B9A8;}
+
+.frontis{position:relative;margin:0 0 46px;padding:72px 40px 56px;border:1px solid var(--line);
+  background:var(--paper2);text-align:center;}
+.frontis .fseries{font-size:11.5px;letter-spacing:.5em;color:var(--brown);}
+.frontis .ftitle{font-size:34px;font-weight:700;letter-spacing:.28em;margin:26px 0 10px;color:var(--ink);}
+.frontis .fsub{font-size:13.5px;color:var(--brown);letter-spacing:.16em;}
+.frontis .frule{width:46px;height:1px;background:#C8B79F;margin:30px auto 26px;}
+.frontis .fname{font-size:15px;letter-spacing:.4em;color:var(--ink);}
+.frontis .fmeta{margin-top:26px;font-size:12px;line-height:2.35;color:#8E8071;letter-spacing:.1em;}
+.frontis .fseal{width:34px;height:34px;margin:30px auto 0;background:none;border:1px solid var(--ochre);
+  color:var(--ochre);display:grid;place-items:center;font-size:13px;letter-spacing:.02em;}
+
+.notice{border:1px solid #D8B9AE;background:#FBF3EE;padding:16px 20px;margin-bottom:40px;
+  font-size:14.5px;line-height:1.9;color:#5A4B3F;}
+.notice strong{color:var(--ochre);}
+
+.toc{background:var(--paper2);border:1px solid var(--line);padding:18px 22px;margin-bottom:48px;}
+.toc h4{margin:0 0 10px;font-size:12.5px;letter-spacing:.22em;color:var(--brown);font-weight:400;}
+.toc ol{list-style:none;margin:0;padding:0;}
+.toc li a{display:flex;gap:9px;align-items:baseline;text-decoration:none;color:var(--ink);
+  font-size:14.5px;padding:6px 0;border-bottom:1px dotted #E4DDD0;}
+.toc li a:hover{color:var(--ochre);}
+.toc i{font-style:normal;font-size:11.5px;color:var(--ochre);min-width:12px;}
+
+h2{font-size:23px;font-weight:700;letter-spacing:.06em;margin:52px 0 22px;
+  padding-top:18px;border-top:1px solid var(--line);}
+h2.ch{font-size:34px;letter-spacing:.2em;margin-top:96px;padding-top:26px;}
+h2.sec{font-size:21px;}
+h2::before{content:"";display:block;width:30px;height:2px;background:var(--ochre);margin:0 0 15px;}
+figure.fig{margin:34px 0 38px;padding:0;}
+figure.fig img,figure.fig svg{display:block;width:100%;height:auto;border:1px solid var(--line);background:var(--paper2);}
+figure.fig figcaption{margin-top:11px;font-size:12.5px;line-height:1.9;color:var(--brown);text-align:center;letter-spacing:.06em;}
+figure.fig figcaption span{color:#9C8E7C;}
+h3{font-size:15px;font-weight:600;letter-spacing:.14em;color:var(--ochre);
+  margin:28px 0 10px;display:flex;align-items:center;gap:10px;}
+h3::after{content:"";flex:1;height:1px;background:#EAE3D6;}
+
+p{margin:0 0 1.02em;font-size:16.5px;color:var(--ink2);text-align:justify;}
+ul{margin:0 0 16px;padding-left:0;list-style:none;}
+li{font-size:16px;color:var(--ink2);margin-bottom:8px;padding-left:16px;position:relative;text-align:justify;}
+li::before{content:"";position:absolute;left:0;top:.85em;width:5px;height:5px;background:#C9B7A4;border-radius:50%;}
+ol{margin:0 0 16px;padding-left:1.8em;}
+ol li{padding-left:0;}
+ol li::before{content:none;}
+
+blockquote.sutra{margin:22px 0 26px;padding:16px 20px;background:#FBF3EE;
+  border-left:3px solid var(--ochre);}
+blockquote.sutra p{margin:0 0 .6em;font-size:15.5px;line-height:2.05;color:#4A4139;letter-spacing:.03em;}
+blockquote.sutra p:last-child{margin-bottom:0;}
+
+table.t{width:100%;border-collapse:collapse;margin:14px 0 24px;font-size:13.5px;}
+table.t th,table.t td{border:1px solid var(--line);padding:8px 10px;text-align:left;
+  vertical-align:top;line-height:1.7;word-break:break-word;}
+table.t th{background:#F1EAE0;font-weight:600;}
+table.t td{color:var(--ink2);}
+
+.foot{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);text-align:center;
+  font-size:12.5px;color:var(--brown);letter-spacing:.1em;line-height:2.1;}
+
+@media (max-width:640px){
+  .page{padding:30px 17px 54px;}
+  .cover{padding:46px 18px 36px;min-height:auto;}
+  .cover .stage{grid-template-columns:1fr;gap:14px;}
+  .cover .gatha{display:none;}
+  .cover h1{writing-mode:horizontal-tb;font-size:30px;letter-spacing:.26em;}
+  .frontis{padding:52px 20px 44px;}
+  .frontis .ftitle{font-size:24px;letter-spacing:.18em;}
+  .cover .meta{font-size:10.5px;letter-spacing:.08em;margin-top:26px;}
+  .cover .meta span{display:block;line-height:2.1;}
+  .cover .meta span:not(:last-child)::after{content:"";}
+  h2{font-size:20px;margin-top:40px;}
+  p{font-size:15.5px;}
+  li{font-size:15px;}
+  table.t{font-size:12px;display:block;overflow-x:auto;white-space:nowrap;}
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <section class="cover">
+    <div class="series">润 泽 说 · 道 可 道</div>
+    <div class="stage">
+      <div class="gatha l">不知不神<br>之所以神</div>
+      <div class="center">
+        <h1>阴符经</h1>
+        <div class="sub">黄帝阴符经 · 通释</div>
+        <div class="tag">三 章 通 释</div>
+        <div class="seal">符</div>
+      </div>
+      <div class="gatha r">观天之道<br>执天之行</div>
+    </div>
+    <div class="meta"><span>李筌三百字本</span><span>五贼相克为用</span><span>三盗循环</span><span>二〇二六年十一月</span></div>
+  </section>
+
+  <div class="frontis">
+<div class="fseries">
+润 泽 说 · 道 可 道
+</div>
+<div class="ftitle">
+黄帝阴符经
+</div>
+<div class="fsub">
+观天执机，盗化归和
+</div>
+<div class="frule">
+
+</div>
+<div class="fname">
+润　泽　著
+</div>
+<div class="fmeta">
+底本　唐李筌三百字本，参敦煌残卷<br>体例　三章 ·
+逐句解读<br>参证　三才五蕴太极空杯 · 阴阳太和 · 和合之辨<br>版本　v1.0.0
+· 二〇二六年十一月
+</div>
+<div class="fseal">
+符
+</div>
+</div>
+
+  <div class="notice">
+    <strong>三章通释。</strong>导读、凡例、字源总表之后，依上中下三章逐句解读，凡三十一句。每句一组：原句｜字源｜深解｜体系联动｜和合对照｜跨典互参。底本用李筌三百字本，参敦煌残卷。译解不复述原文，只标出处分寸。
+  </div>
+
+  <nav class="toc"><h4>目　次</h4><ol><li><a href="#导读"><i>·</i><span>导读</span></a></li>
+<li><a href="#凡例"><i>·</i><span>凡例</span></a></li>
+<li><a href="#原文底本"><i>·</i><span>原文底本</span></a></li>
+<li><a href="#时代背景"><i>·</i><span>时代背景</span></a></li>
+<li><a href="#字源溯源"><i>·</i><span>字源溯源</span></a></li>
+<li><a href="#上篇-神仙抱一演道章-1"><i>·</i><span>上篇 · 神仙抱一演道章</span></a></li>
+<li><a href="#中篇-富国安民演法章-1"><i>·</i><span>中篇 · 富国安民演法章</span></a></li>
+<li><a href="#下篇-强兵战胜演术章-1"><i>·</i><span>下篇 · 强兵战胜演术章</span></a></li>
+<li><a href="#体系联动总表"><i>·</i><span>体系联动总表</span></a></li>
+<li><a href="#和合总辨"><i>·</i><span>和合总辨</span></a></li>
+<li><a href="#跨典互参"><i>·</i><span>跨典互参</span></a></li>
+<li><a href="#附录一-古注对勘"><i>·</i><span>附录一 · 古注对勘</span></a></li>
+<li><a href="#附录二-全篇总辨"><i>·</i><span>附录二 · 全篇总辨</span></a></li>
+<li><a href="#后记"><i>·</i><span>后记</span></a></li></ol></nav>
+  <main>
+<h2 class="ch" id="导读">导读</h2>
+<p>世人读《阴符经》，极易困在两个极端：一类把它当成权谋兵策、盗夺造化的秘术；另一类见「贼」「杀」「盗」诸字，心生怖畏，视之为凶煞之文。二者皆是断章取义，未能体察本经立言的本怀。</p>
+<p>本经名曰阴符。<strong>阴</strong>，是隐而未彰、将发未发的造化几微；<strong>符</strong>，是天人同构、默然相应的信契。天地运化有生必有杀，有长必有消；五行相生以养物，相克以裁物。这个生杀相循、互相资取的隐微节律，便是阴符。</p>
+<p>它不同于《道德经》重在守柔归根，也不同于《周易》详论时位吉凶，亦不似《庄子》逍遥物化、消解对待。《阴符经》直面造化里的克制、代谢、取予，直指「机」这个核心：识机，而不造机；知盗，而不妄盗；见杀，而不妄杀。</p>
+<p>书中的五贼、三盗、杀机，都不是世俗所理解的恶。五贼以五行为体，以相克裁制为用，克制是收敛、是校正、是防止生机漫溢溃散；三盗是万物自然相资的循环，天地养万物，万物养人，人复归天地，互为滋养；杀机是除旧布新的代谢，旧不去则新不生。</p>
+<p>本解读以李筌古注为根基，参校敦煌本，兼收异说而不盲从。全书分三章逐句解读，每句独立成组：经文原句、字源溯源、逐句深解、体系联动、和合对照、跨典互参。区分两条路径：<strong>人为之合</strong>，是以机心算计、捕捉、御使造化之机，求为己用，是小人轻命之路；<strong>道境之和</strong>，是照见生杀本然，时至则应，时止而藏，不攀不取，君子固躬之道。</p>
+<p>又以老庄、般若、易理互参：老子「辅万物之自然而不敢为」，庄子「物化」，易传「几者动之微」，般若缘起无住，与本经义理互通。生杀、五贼、盗机，都是缘起流转之相；相有生灭，本体空寂，不执生，不怖杀。</p>
+<p>读此经，不是学一套驾驭天地的术法，而是建立一层通透的观照：看清世界底层生克制化的循环节律，收敛自身妄起的心机，安于定分，顺机而行。</p>
+<blockquote class="sutra">
+<p>经旨一言收束：<strong>识天地自然之杀机，不启一己私欲之杀机；知万物互资之盗机，不生强取掠夺之盗心。</strong></p>
+</blockquote>
+<h2 class="ch" id="凡例">凡例</h2>
+<p>一、<strong>底本</strong>。用唐李筌三百字本，参敦煌残卷校勘；不分篇第之名，只依三章旧题（神仙抱一演道、富国安民演法、强兵战胜演术），题名从通行本，不改经文。</p>
+<p>二、<strong>逐句体例</strong>。一句原文，独立一组，六段：原句、字源溯源、逐句深解、体系联动、和合对照、跨典互参。合则见理，分则见句，不混作通篇泛论。</p>
+<p>三、<strong>关键字</strong>。符、贼、机、盗、杀、伏藏六字先立字典，全书复用同一口径；古注分歧处标明异说，不入正文。</p>
+<p>四、<strong>五贼口径</strong>。体为五行，用在相克裁制、代谢收敛；相生为德，相克为贼，害中含恩，裁而后成。不将五贼等同五行全体，不作鬼神邪祟解。</p>
+<p>五、<strong>配图规范</strong>。只作譬喻与示意：五贼制化循环图、三盗三才循环图。不绘神像、不绘黄帝像；图只辅助见地，不替代文字。沿用心经图式，纸墨赭色一套。</p>
+<p>六、<strong>三参互证</strong>。每句可与老庄、易理、般若对照处，标出互参原句；不强拉，不凑数。</p>
+<p>七、<strong>和合之分</strong>。凡判别处，以「合／和」二门标示：合是构框划界、二元取舍；和是本具无界、照而不住。</p>
+<p>八、<strong>不作</strong>。不取后世丹法术语，不作权谋术数教程，不造新模型名相。</p>
+<h2 class="ch" id="原文底本">原文底本</h2>
+<h2 id="上篇-神仙抱一演道章">上篇 · 神仙抱一演道章</h2>
+<p>观天之道，执天之行，尽矣。<br />
+天有五贼，见之者昌。<br />
+五贼在心，施行于天。<br />
+宇宙在乎手，万化生乎身。<br />
+天性，人也；人心，机也。<br />
+立天之道，以定人也。<br />
+天发杀机，移星易宿；地发杀机，龙蛇起陆；人发杀机，天地反覆。<br />
+天人合发，万化定基。</p>
+<h2 id="中篇-富国安民演法章">中篇 · 富国安民演法章</h2>
+<p>性有巧拙，可以伏藏。<br />
+九窍之邪，在乎三要，可以动静。<br />
+火生于木，祸发必克；奸生于国，时动必溃。<br />
+知之修炼，谓之圣人。</p>
+<h2 id="下篇-强兵战胜演术章">下篇 · 强兵战胜演术章</h2>
+<p>天生天杀，道之理也。<br />
+天地，万物之盗；万物，人之盗；人，万物之盗。<br />
+三盗既宜，三才既安。<br />
+故曰：食其时，百骸理；动其机，万化安。<br />
+人知其神而神，不知不神之所以神也。<br />
+日月有数，大小有定，圣功生焉，神明出焉。<br />
+其盗机也，天下莫能见，莫能知。<br />
+君子得之固躬，小人得之轻命。</p>
+<h2 class="ch" id="时代背景">时代背景</h2>
+<p>《阴符经》托名黄帝，学界主流判定成书于魏晋至唐初，思想汇黄老、阴阳、兵道、内修四流，非上古黄帝亲撰。三百余字，篇幅极短而体系极整，故历代注家蜂起，李筌、张果、李光地、刘一明皆有专解，宋儒朱熹亦为之旁评。</p>
+<p>它和同系列几部经典的分工很清楚：</p>
+<ul>
+<li>《道德经》重守柔、归根、无为，偏于退蓄与不争；</li>
+<li>《周易》重时位、吉凶、变易，侧重进退取舍的分寸；</li>
+<li>《庄子》重物化、无待、逍遥，消解对待；</li>
+<li>《阴符经》直面生杀制化、隐机取用，在节律之中立分寸。</li>
+</ul>
+<p>本经极易被两条偏路劫持：权谋术数派拿它控御时机、算计万物；避静一派畏惧「贼、杀、盗」，单向只取生生之德。二者皆断章。本书所取的路径，在两者之外：<strong>承认生杀制化为实相，识机而不造机，知盗而不妄盗。</strong></p>
+<h2 class="ch" id="字源溯源">字源溯源</h2>
+<p>一字一字典，全书复用同一口径。</p>
+<p><strong>符</strong>。《说文》：符，信也。分而相合，两相契验。不是符箓符咒，是天人之间暗相契合的节契。</p>
+<p><strong>贼</strong>。《说文》：贼，败也，裁抑毁坏。李筌注：五行相生为德，相克为贼。贼是五行相克裁制之功用，不是五行全体，更不是五种邪祟。</p>
+<p><strong>机（几）</strong>。几者，动之微，吉凶之先见。事情将发未发的分界点，也是心念发动的关口。《易》之「几」与本经之「机」同义。</p>
+<p><strong>盗</strong>。本义暗中取资。本经引申为互相承取、天然循环，不是强夺偷盗。这是全书最易被俗解带偏的一字。</p>
+<p><strong>杀</strong>。本义消落、革故。凡旧形态消散、旧势能剥落、代谢除旧，都叫杀。杀是更新的前提，不是杀伐恶意。</p>
+<p><strong>伏藏</strong>。敛藏、不向外驰耀。藏巧守拙，不是藏奸，也不是遮蔽本性。</p>
+<h2 class="ch" id="上篇-神仙抱一演道章-1">上篇 · 神仙抱一演道章</h2>
+<h2 id="观天之道执天之行尽矣">观天之道，执天之行，尽矣。</h2>
+<p><strong>字源溯源</strong>　道，恒常之理；行，运化流行。执，持契、顺承，不是把持控制。</p>
+<p><strong>逐句深解</strong>　天有不变的法则，也有法则当下流转显现的节律。观是静照，不带好恶取舍；执是顺势承接。天人之学的全部要义收摄于此一句，不必向外另寻玄妙。</p>
+<p><strong>体系联动</strong>　空杯之体，本自照物，不加分别。三才之中，此为「天」之一极：法则与节律同出。</p>
+<p><strong>和合对照</strong></p>
+<table class="t">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>见地</th>
+<th>判定</th>
+<th>阐释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>我去揣测天道、算计天道，欲驾驭其节律</td>
+<td>合</td>
+<td>心先立一个「我要合于天」的框，天便成了被驾驭之物</td>
+</tr>
+<tr class="even">
+<td>静照其道，顺承其行，不增不减</td>
+<td>和</td>
+<td>观而不扰，执而不宰；法则自显，不必造作</td>
+</tr>
+</tbody>
+</table>
+<p><strong>跨典互参</strong>　《道德经》：「辅万物之自然而不敢为。」</p>
+<h2 id="天有五贼见之者昌">天有五贼，见之者昌。</h2>
+<p><strong>字源溯源</strong>　贼，《说文》败也。李筌注：五行相生为德，相克为贼。贼不是五行全部，专指克制、收敛、裁成的势能。</p>
+<p><strong>逐句深解</strong>　造化之中自带五行相克的制化力量。世人多只看见相生滋养，不知克制收敛同样是成就万物的必要条件；一味生长而无所收敛，生机泛滥溃散。能照见这一层制化隐机，知生亦知克，不偏一端，方能昌顺。</p>
+<p><strong>体系联动</strong>　五贼对应五蕴：色、受、想、行、识，每一蕴显起之时，自带自我制约、消散之能，即是「贼」。生里含杀，杀里藏生，一蕴之中本自两面。</p>
+<p><strong>和合对照</strong></p>
+<table class="t">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>见地</th>
+<th>判定</th>
+<th>阐释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>看见五贼，便想调度克制之术，用以谋利</td>
+<td>合</td>
+<td>把制化之功截为工具，能所对待，落入术中</td>
+</tr>
+<tr class="even">
+<td>看见五贼，知其是天道本然制化，不拒克、不怖克</td>
+<td>和</td>
+<td>生杀同体，见其两面而无取捨</td>
+</tr>
+</tbody>
+</table>
+<p><strong>跨典互参</strong>　《易》消息盈虚：消即是贼之机，盈即是德之显。</p>
+<figure class="fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 600" width="100%" role="img" aria-label="五贼制化循环图">
+  <defs>
+    <style>
+      .t{font-family:"Noto Serif SC","Songti SC",serif;fill:#25211D;text-anchor:middle}
+      .ttl{font-size:24px;letter-spacing:.14em}
+      .sub{font-size:12.5px;fill:#7C6D5C;letter-spacing:.08em}
+      .n{font-size:22px;letter-spacing:.05em}
+      .cap{font-size:14px;fill:#3B352F;letter-spacing:.05em}
+      .ochre{fill:#994433}
+      .rul{stroke:#DCD5C8;stroke-width:1}
+    </style>
+    <marker id="gen" markerWidth="10" markerHeight="10" refX="7" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#7C6D5C"/>
+    </marker>
+  </defs>
+  <rect width="820" height="600" fill="#FCFAF6"/>
+  <text class="t ttl" x="410" y="44">五 贼 制 化</text>
+  <text class="t sub" x="410" y="68">体为五行　用在相克裁制　相生为德　相克为贼</text>
+  <line x1="60" y1="86" x2="760" y2="86" class="rul"/>
+  <path d="M448.7 140.8 Q529.9 131.0 545.7 211.2" fill="none" stroke="#7C6D5C" stroke-width="1.5" marker-end="url(#gen)"/>
+  <path d="M569.6 284.8 Q604.0 359.0 532.6 398.8" fill="none" stroke="#7C6D5C" stroke-width="1.5" marker-end="url(#gen)"/>
+  <path d="M469.9 444.3 Q410.0 500.0 350.1 444.3" fill="none" stroke="#7C6D5C" stroke-width="1.5" marker-end="url(#gen)"/>
+  <path d="M287.4 398.8 Q216.0 359.0 250.4 284.8" fill="none" stroke="#7C6D5C" stroke-width="1.5" marker-end="url(#gen)"/>
+  <path d="M274.3 211.2 Q290.1 131.0 371.3 140.8" fill="none" stroke="#7C6D5C" stroke-width="1.5" marker-end="url(#gen)"/>
+  <line x1="420.8" y1="171.3" x2="492.1" y2="390.5" stroke="#994433" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <line x1="532.0" y1="267.7" x2="345.4" y2="403.3" stroke="#994433" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <line x1="474.6" y1="403.3" x2="288.0" y2="267.7" stroke="#994433" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <line x1="327.9" y1="390.5" x2="399.2" y2="171.3" stroke="#994433" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <line x1="294.7" y1="247.2" x2="525.3" y2="247.2" stroke="#994433" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <circle cx="410.0" cy="138.0" r="31" fill="#E6EFE3" stroke="#7C9B76"/>
+  <text class="t n" x="410.0" y="146.0">木</text>
+  <circle cx="560.3" cy="247.2" r="31" fill="#F6E2DC" stroke="#B9553F"/>
+  <text class="t n" x="560.3" y="255.2">火</text>
+  <circle cx="502.9" cy="423.8" r="31" fill="#EFE2CF" stroke="#A98B5E"/>
+  <text class="t n" x="502.9" y="431.8">土</text>
+  <circle cx="317.1" cy="423.8" r="31" fill="#F2F2EF" stroke="#8A8A82"/>
+  <text class="t n" x="317.1" y="431.8">金</text>
+  <circle cx="259.7" cy="247.2" r="31" fill="#DDE3E8" stroke="#4E6878"/>
+  <text class="t n" x="259.7" y="255.2">水</text>
+  <line x1="60" y1="500" x2="760" y2="500" class="rul"/>
+  <text class="t cap" x="410" y="528">实线相生：木→火→土→金→水，长养之德</text>
+  <text class="t cap ochre" x="410" y="556">虚线相克：木克土、土克水、水克火、火克金、金克木，裁制之贼</text>
+  <text class="t sub" x="410" y="582">克非纯害：无克则生而泛滥，裁而后成，害中藏恩</text>
+</svg><figcaption>图一　五贼制化循环<br><span>实线相生为德，虚线相克为贼；害中含恩，裁而后成。</span></figcaption></figure>
+<h2 id="五贼在心施行于天">五贼在心，施行于天。</h2>
+<p><strong>字源溯源</strong>　施行，与天同其运化，不是人心向外命令天地。</p>
+<p><strong>逐句深解</strong>　这套五行生克制化的机理，不在天外，与本心同构。本心通达此理，一举一动自然契合天道节律。不是心能造五贼，是心中本有与天地一致的制化逻辑。</p>
+<p><strong>体系联动</strong>　三才同构：一身即小天地。识属地，受想行属人，色属地，五蕴成身，五贼成机。</p>
+<p><strong>和合对照</strong></p>
+<table class="t">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>见地</th>
+<th>判定</th>
+<th>阐释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>以我心之谋划，强行施行、驱动五贼</td>
+<td>合</td>
+<td>心在框外指挥，术在框内运转，两相割裂</td>
+</tr>
+<tr class="even">
+<td>自心通达五贼之理，举止自然合天</td>
+<td>和</td>
+<td>心即天则，不假外求，无造作之痕</td>
+</tr>
+</tbody>
+</table>
+<p><strong>跨典互参</strong>　《坛经》：「万法尽在自心。」</p>
+<h2 id="宇宙在乎手万化生乎身">宇宙在乎手，万化生乎身。</h2>
+<p><strong>字源溯源</strong>　在乎手，非掌控把玩；生乎身，非身体生出万物。</p>
+<p><strong>逐句深解</strong>　不是神通操控天地。一身之内，完整复刻天地五行生克代谢的循环；天地万化的道理，不必远求，在自身身心运转之中便可印证。</p>
+<p><strong>体系联动</strong>　芥子纳须弥：器的边界本非实有。杯内杯外同属此空，故一身可容万化。</p>
+<p><strong>和合对照</strong></p>
+<table class="t">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>见地</th>
+<th>判定</th>
+<th>阐释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>自以为可掌控宇宙、造化万物</td>
+<td>合</td>
+<td>我相、能所具足，把实相割成操纵者与被操纵者</td>
+</tr>
+<tr class="even">
+<td>一身即是宇宙缩影，于自身上印证万化</td>
+<td>和</td>
+<td>内外一体，大小相摄，不立主宰</td>
+</tr>
+</tbody>
+</table>
+<p><strong>跨典互参</strong>　《庄子》：「天地与我并生，万物与我为一。」</p>
+<h2 id="天性人也人心机也">天性，人也；人心，机也。</h2>
+<p><strong>字源溯源</strong>　天性，天道本有之性；机，几也，心念发动、取舍决断的关口。</p>
+<p><strong>逐句深解</strong>　天道的本有之性，下贯而为人之天性；而人心，是一切取舍、好恶、谋划发动的机括枢纽。天性静而无相，人心一动，便分出趋向。</p>
+<p><strong>体系联动</strong>　杯体为天性，杯中之动相为心念。体不动而用万变，正在此处辨。</p>
+<p><strong>和合对照</strong></p>
+<table class="t">
+<thead>
+<tr class="header">
+<th>见地</th>
+<th>判定</th>
+<th>阐释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>放纵人心机巧，以私欲驱动天性</td>
+<td>合</td>
+<td>以用夺体，心机自立法度</td>
+</tr>
+<tr class="even">
+<td>守住天性为本，觉察心念发动之机</td>
+<td>和</td>
+<td>体在用先，观机而不随机</td>
+</tr>
+</tbody>
+</table>
+<p><strong>跨典互参</strong>　《易·系辞》：「几者，动之微，吉凶之先见者也。」</p>
+<h2 id="立天之道以定人也">立天之道，以定人也。</h2>
+<p><strong>字源溯源</strong>　定，校准、安立，不是禁锢约束。</p>
+<p><strong>逐句深解</strong>　拿天道生克制化的节律作标尺，校准人心的发动，不让私意心机脱离天道的分寸。</p>
+<p><strong>体系联动</strong>　以三才之序规范五蕴起伏：非压念，是校尺；非禁心，是定界。</p>
+<p><strong>和合对照</strong></p>
+<table class="t">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>见地</th>
+<th>判定</th>
+<th>阐释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>借天道之名，行自己好恶，规训他人</td>
+<td>合</td>
+<td>天道被框成一张人间的尺，尺外皆判为逆</td>
+</tr>
+<tr class="even">
+<td>以天道节律自勘，安住自身心念边界</td>
+<td>和</td>
+<td>尺在自心，不用于量人</td>
+</tr>
+</tbody>
+</table>
+<p><strong>跨典互参</strong>　《道德经》：「人法地，地法天，天法道，道法自然。」</p>
+<h2 id="天发杀机移星易宿地发杀机龙蛇起陆人发杀机天地反覆">天发杀机，移星易宿；地发杀机，龙蛇起陆；人发杀机，天地反覆。</h2>
+<p><strong>字源溯源</strong>　杀，革故、消落、代谢，非杀伐屠戮。杀机，旧格局消散、时序更替之势能。</p>
+<p><strong>逐句深解</strong>　天的杀机，是寒暑更替、星辰迁转、时序革故；地的杀机，是地气变动、蛰伏之物应时而起，都是天地自然代谢，无善恶可言。唯独人，若顺贪嗔私意主动造对立、强逆天道，平衡便倾覆、秩序大乱。这是全篇重点警戒处。</p>
+<p><strong>体系联动</strong>　五贼之克机在天地层面显现。人发杀机，是行蕴妄造，扰及全体：一身之乱与天地之乱，同一机理。</p>
+<p><strong>和合对照</strong></p>
+<table class="t">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>见地</th>
+<th>判定</th>
+<th>阐释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>主动起杀心、对立心，以斗争解决一切</td>
+<td>合</td>
+<td>以人之机强合天时，二元对立由此固化</td>
+</tr>
+<tr class="even">
+<td>不主动发起杀机，只承接天道自然之变</td>
+<td>和</td>
+<td>天地自变，人心不添一刀</td>
+</tr>
+</tbody>
+</table>
+<p><strong>跨典互参</strong>　《道德经》：「兵者不祥之器，非君子之器，不得已而用之。」</p>
+<h2 id="天人合发万化定基">天人合发，万化定基。</h2>
+<p><strong>字源溯源</strong>　合发，时机同步相应，不是天人一起作乱。注意此「合」是契合之合，非本书所判之「合」。</p>
+<p><strong>逐句深解</strong>　天道时机成熟，人心之机与之同步契合；生杀各当其分，不过、不妄，变化才有安稳根基。不是人去带动天，是人心契应天时。</p>
+<p><strong>体系联动</strong>　和的最高状态：内外节律同频而不失其分。此句之「合发」，是应机，非造机。</p>
+<p><strong>和合对照</strong></p>
+<table class="t">
+<thead>
+<tr class="header">
+<th>见地</th>
+<th>判定</th>
+<th>阐释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>我主动造事，盼天来配合我的图谋</td>
+<td>合</td>
+<td>以我意套天时，天沦为助力</td>
+</tr>
+<tr class="even">
+<td>时至而后应，天时已动，我方随而应之</td>
+<td>和</td>
+<td>不先不后，应而不造</td>
+</tr>
+</tbody>
+</table>
+<p><strong>跨典互参</strong>　《易》：「与时偕行。」</p>
+<h2 class="ch" id="中篇-富国安民演法章-1">中篇 · 富国安民演法章</h2>
+<h2 id="性有巧拙可以伏藏">性有巧拙，可以伏藏。</h2>
+<p><strong>字源溯源</strong>　伏藏，敛藏、不向外驰耀，不是遮蔽本性。巧，灵明慧思；拙，沉钝质朴。</p>
+<p><strong>逐句深解</strong>　人的禀赋有灵巧，有朴拙。巧拙皆可收敛藏住，不向外炫耀机巧，不显露愚暗。藏巧守拙，光而不耀。</p>
+<p><strong>体系联动</strong>　收摄五蕴向外攀缘之势。巧是识之利，拙是受之钝，二者皆可伏，伏即不为境牵。</p>
+<p><strong>和合对照</strong></p>
+<table class="t">
+<thead>
+<tr class="header">
+<th>见地</th>
+<th>判定</th>
+<th>阐释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>藏拙是伪装，藏巧是待时而动</td>
+<td>合</td>
+<td>藏亦成术，机心在藏中更密</td>
+</tr>
+<tr class="even">
+<td>敛而不耀，巧拙皆是自性本有，不刻意彰显</td>
+<td>和</td>
+<td>藏非压抑，只是不向外张</td>
+</tr>
+</tbody>
+</table>
+<p><strong>跨典互参</strong>　《道德经》：「大直若屈，大巧若拙。」</p>
+<h2 id="九窍之邪在乎三要可以动静">九窍之邪，在乎三要，可以动静。</h2>
+<p><strong>字源溯源</strong>　九窍，身之孔窍；三要，眼、耳、口，最易向外攀缘引扰之关口。</p>
+<p><strong>逐句深解</strong>　外邪扰动心神，从九窍而入，核心关口即眼、耳、口。收摄三要：动时不逐外境，静时不落枯寂；开合自主，不为境牵。</p>
+<p><strong>体系联动</strong>　止观之义：塞其兑，闭其门，不是闭塞不见，是见而不逐。</p>
+<p><strong>和合对照</strong></p>
+<table class="t">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>见地</th>
+<th>判定</th>
+<th>阐释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>强行闭窍、压抑感官，硬压念头</td>
+<td>合</td>
+<td>以静合静，把「不动」做成可抓取之物</td>
+</tr>
+<tr class="even">
+<td>知其关口，自主动静，不随境跑</td>
+<td>和</td>
+<td>动静由己，非由境定</td>
+</tr>
+</tbody>
+</table>
+<p><strong>跨典互参</strong>　《道德经》：「塞其兑，闭其门，终身不勤。」</p>
+<h2 id="火生于木祸发必克奸生于国时动必溃">火生于木，祸发必克；奸生于国，时动必溃。</h2>
+<p><strong>字源溯源</strong>　克，消毁、克制。奸，缝隙、隐患；国，可引申为一身、一体系。</p>
+<p><strong>逐句深解</strong>　火依托木而生，火势一发动，木即被焚；隐患依托体系内部的缝隙而生，时机一到，整体崩坏。祸患的势能从来都潜藏在载体内部，不是外来。</p>
+<p><strong>体系联动</strong>　每一蕴中自带溃坏之贼性：生处即藏灭处，成处即伏败处。</p>
+<p><strong>和合对照</strong></p>
+<table class="t">
+<thead>
+<tr class="header">
+<th>见地</th>
+<th>判定</th>
+<th>阐释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>看见隐患，等时机到来，借祸达成目的</td>
+<td>合</td>
+<td>以祸为器，把败机挪作己用</td>
+</tr>
+<tr class="even">
+<td>觉察内在隐患，提前调护，不令祸发</td>
+<td>和</td>
+<td>治于未兆，不与祸争</td>
+</tr>
+</tbody>
+</table>
+<p><strong>跨典互参</strong>　《道德经》：「其安易持，其未兆易谋。」</p>
+<h2 id="知之修炼谓之圣人">知之修炼，谓之圣人。</h2>
+<p><strong>字源溯源</strong>　修炼，觉察、调伏内在隐患，不是炼丹求神通。</p>
+<p><strong>逐句深解</strong>　能觉察自身内部潜藏的祸机、缝隙，随时收敛调伏，不让隐患到时机爆发，就是本经所说的圣人。修炼不是加法，是察与伏。</p>
+<p><strong>体系联动</strong>　时时观照五贼，于萌芽处调伏。这正是「行」蕴上的功夫，不在色相上做。</p>
+<p><strong>和合对照</strong></p>
+<table class="t">
+<thead>
+<tr class="header">
+<th>见地</th>
+<th>判定</th>
+<th>阐释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>修炼为得神通、驭万物</td>
+<td>合</td>
+<td>以果为目标，修行成交易</td>
+</tr>
+<tr class="even">
+<td>修炼只是觉察自心隐患，令不妄发</td>
+<td>和</td>
+<td>无所求，只是不添乱</td>
+</tr>
+</tbody>
+</table>
+<p><strong>跨典互参</strong>　《中庸》：「莫见乎隐，莫显乎微，故君子慎其独也。」</p>
+<h2 class="ch" id="下篇-强兵战胜演术章-1">下篇 · 强兵战胜演术章</h2>
+<h2 id="天生天杀道之理也">天生天杀，道之理也。</h2>
+<p><strong>字源溯源</strong>　生，长养；杀，消落。二者并列，无善恶高下。</p>
+<p><strong>逐句深解</strong>　有生长就有消落，生杀一体，是道本来的节律。不能只好生而恶杀，好生恶杀，即是以人心割裂天道。</p>
+<p><strong>体系联动</strong>　空杯之中，生相与灭相平等：杯相现时已在散，散时不曾减其用。</p>
+<p><strong>和合对照</strong></p>
+<table class="t">
+<thead>
+<tr class="header">
+<th>见地</th>
+<th>判定</th>
+<th>阐释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>偏爱生、厌弃杀，欲永留生长</td>
+<td>合</td>
+<td>择一边立框，另一边判为不可</td>
+</tr>
+<tr class="even">
+<td>接纳生杀皆自然之理，不执一边</td>
+<td>和</td>
+<td>生杀同体，见而不取</td>
+</tr>
+</tbody>
+</table>
+<p><strong>跨典互参</strong>　《庄子》：「方生方死，方死方生。」</p>
+<h2 id="天地万物之盗万物人之盗人万物之盗">天地，万物之盗；万物，人之盗；人，万物之盗。</h2>
+<p><strong>字源溯源</strong>　盗，暗中取资、互相滋养。世俗偷盗是私夺；本经之盗是天然循环。</p>
+<p><strong>逐句深解</strong>　四时之气由天地而出，万物取用天地，是万物盗天地；万物滋养人，是人盗万物；人身衰朽复归大地，反哺草木，是万物盗人。三者循环往复，缺一则断。</p>
+<p><strong>体系联动</strong>　三才互摄，缘起相依。三盗非三恶，是同一循环的三个断面。</p>
+<p><strong>和合对照</strong></p>
+<table class="t">
+<thead>
+<tr class="header">
+<th>见地</th>
+<th>判定</th>
+<th>阐释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>读懂三盗，便想主动掠夺、攫取资源</td>
+<td>合</td>
+<td>把循环截成单向取用，只取不予</td>
+</tr>
+<tr class="even">
+<td>明白互相资养，取用有度，不贪取</td>
+<td>和</td>
+<td>取而有还，用而有时</td>
+</tr>
+</tbody>
+</table>
+<p><strong>跨典互参</strong>　《庄子》物化：万物互相转化，即三盗之另一说法。</p>
+<figure class="fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 540" width="100%" role="img" aria-label="三盗三才循环图">
+  <defs>
+    <style>
+      .t{font-family:"Noto Serif SC","Songti SC",serif;fill:#25211D;text-anchor:middle}
+      .ttl{font-size:24px;letter-spacing:.14em}
+      .sub{font-size:12.5px;fill:#7C6D5C;letter-spacing:.08em}
+      .n{font-size:19px;letter-spacing:.08em}
+      .lab{font-size:13px;fill:#994433;letter-spacing:.04em}
+      .cap{font-size:14px;fill:#3B352F;letter-spacing:.05em}
+      .ochre{fill:#994433}
+      .rul{stroke:#DCD5C8;stroke-width:1}
+    </style>
+    <marker id="ar" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto">
+      <path d="M0 0 L11 5.5 L0 11 Z" fill="#994433"/>
+    </marker>
+  </defs>
+  <rect width="820" height="540" fill="#FCFAF6"/>
+  <text class="t ttl" x="410" y="44">三 盗 三 才</text>
+  <text class="t sub" x="410" y="68">天地·万物·人　互为盗　循环相资　取用有度</text>
+  <line x1="60" y1="86" x2="760" y2="86" class="rul"/>
+  <path d="M384.0 213.0 Q323.9 249.1 322.7 319.2" fill="none" stroke="#994433" stroke-width="1.8" marker-end="url(#ar)"/>
+  <text class="t lab" x="296.2" y="233.1">万物盗天地之气</text>
+  <path d="M347.7 366.0 Q409.0 400.0 470.3 366.0" fill="none" stroke="#994433" stroke-width="1.8" marker-end="url(#ar)"/>
+  <text class="t lab" x="409.0" y="432.0">人盗万物之养</text>
+  <path d="M498.3 321.0 Q497.1 250.9 437.0 214.8" fill="none" stroke="#994433" stroke-width="1.8" marker-end="url(#ar)"/>
+  <text class="t lab" x="524.8" y="234.9">万物盗人之归</text>
+  <circle cx="410.0" cy="168.0" r="46" fill="#F5EEE1" stroke="#A98B5E"/>
+  <text class="t n" x="410.0" y="175.0">天 地</text>
+  <circle cx="295.7" cy="366.0" r="46" fill="#F5EEE1" stroke="#A98B5E"/>
+  <text class="t n" x="295.7" y="373.0">万 物</text>
+  <circle cx="524.3" cy="366.0" r="46" fill="#F5EEE1" stroke="#A98B5E"/>
+  <text class="t n" x="524.3" y="373.0">人</text>
+  <circle cx="410" cy="288" r="46" fill="none" stroke="#E0D6C4" stroke-dasharray="4 4"/>
+  <text class="t" x="410" y="284" font-size="14" fill="#994433">三盗既宜</text>
+  <text class="t sub" x="410" y="306">三才既安</text>
+  <line x1="60" y1="480" x2="760" y2="480" class="rul"/>
+  <text class="t cap" x="410" y="508">盗非劫掠，是循环取资：取而有还，用而有时</text>
+  <text class="t cap ochre" x="410" y="534">截流则断，壅积则溃——故曰「既宜」</text>
+</svg><figcaption>图二　三盗三才循环<br><span>天地、万物、人互为盗；取用有度，三才乃安。</span></figcaption></figure>
+<h2 id="三盗既宜三才既安">三盗既宜，三才既安。</h2>
+<p><strong>字源溯源</strong>　宜，合度、适时，不过分索取。三才，天地人。</p>
+<p><strong>逐句深解</strong>　三者互相取养，分寸合宜、时序恰当，天地、万物、人整个系统才能安稳。宜不是平均，是各当其分。</p>
+<p><strong>体系联动</strong>　和之稳态：循环不失其衡。空的另一面即是「宜」——不偏取，不壅积。</p>
+<p><strong>和合对照</strong></p>
+<table class="t">
+<thead>
+<tr class="header">
+<th>见地</th>
+<th>判定</th>
+<th>阐释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>欲操控三盗循环，为自源源供给</td>
+<td>合</td>
+<td>把循环做成水库，筑坝截流</td>
+</tr>
+<tr class="even">
+<td>守分寸、合时节，维护循环本然之衡</td>
+<td>和</td>
+<td>不筑不截，任其自流而不溢</td>
+</tr>
+</tbody>
+</table>
+<p><strong>跨典互参</strong>　《中庸》：「时中。」</p>
+<h2 id="故曰食其时百骸理动其机万化安">故曰：食其时，百骸理；动其机，万化安。</h2>
+<p><strong>字源溯源</strong>　时，时节、时机。理，调畅和顺。机，隐微发动之几；动其机，应机而动，非主动造机。</p>
+<p><strong>逐句深解</strong>　取养顺应时序，不逆时节，身体百骸自然调顺；行动契合当下隐微之机，万事变化安稳不乱。向内延伸：心念取境亦须合时，非随时即取。重点在此字：应机，不是寻机、造机。</p>
+<p><strong>体系联动</strong>　身心节律顺天地节律。三才之「人」极在此落实：人不是主体，是应者。</p>
+<p><strong>和合对照</strong></p>
+<table class="t">
+<thead>
+<tr class="header">
+<th>见地</th>
+<th>判定</th>
+<th>阐释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>四处寻找机会，主动制造机会谋利</td>
+<td>合</td>
+<td>以己机代天机，机成我私</td>
+</tr>
+<tr class="even">
+<td>机现而后应，无机不动</td>
+<td>和</td>
+<td>待机而应，应而不留</td>
+</tr>
+</tbody>
+</table>
+<p><strong>跨典互参</strong>　《周易》：「时止则止，时行则行。」</p>
+<h2 id="人知其神而神不知不神之所以神也">人知其神而神，不知不神之所以神也。</h2>
+<p><strong>字源溯源</strong>　神，灵验、显相。不神，无异象、平淡日用。</p>
+<p><strong>逐句深解</strong>　世人追逐异象、神迹、奇特感应，把看得见的灵验当成神。真正的至神，平淡无迹，日用寻常，没有奇异征兆，默默成就万物。不显其相，才是至神。</p>
+<p><strong>体系联动</strong>　凡所有相皆是虚妄：不执神迹之相，方见不神之神。</p>
+<p><strong>和合对照</strong></p>
+<table class="t">
+<thead>
+<tr class="header">
+<th>见地</th>
+<th>判定</th>
+<th>阐释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>追求神奇异象，以灵异证明修行</td>
+<td>合</td>
+<td>立一个「神」之相去追，相立即迷</td>
+</tr>
+<tr class="even">
+<td>安于平常，日用之中即是神明</td>
+<td>和</td>
+<td>不立神相，故神自现</td>
+</tr>
+</tbody>
+</table>
+<p><strong>跨典互参</strong>　《金刚经》：「应无所住，而生其心。」</p>
+<h2 id="日月有数大小有定圣功生焉神明出焉">日月有数，大小有定，圣功生焉，神明出焉。</h2>
+<p><strong>字源溯源</strong>　数，节度周期；定，本有分限，不可逾越。</p>
+<p><strong>逐句深解</strong>　日月运行自有周期节度，万物禀赋、分量自有定分。圣人不越定分妄求，顺节度而行；无为之中，圣功自成，神明自显。</p>
+<p><strong>体系联动</strong>　空杯不越边界，守其本分。器中空量有定，法上实无自性：定分是相，不越是和。</p>
+<p><strong>和合对照</strong></p>
+<table class="t">
+<thead>
+<tr class="header">
+<th>见地</th>
+<th>判定</th>
+<th>阐释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>欲突破定数、逆天改命，求超量所得</td>
+<td>合</td>
+<td>以贪越界，界即反噬</td>
+</tr>
+<tr class="even">
+<td>知有定分，安于本分，顺数而行</td>
+<td>和</td>
+<td>不越不亏，各得其分</td>
+</tr>
+</tbody>
+</table>
+<h2 id="其盗机也天下莫能见莫能知">其盗机也，天下莫能见，莫能知。</h2>
+<p><strong>字源溯源</strong>　盗机，三盗相资、生杀代谢之隐微机要，藏在显相背后。</p>
+<p><strong>逐句深解</strong>　这套互相取资、生杀裁制的底层机要，隐而不彰。常人只看见表面生灭，看不见背后循环之几微。此即「阴符」之阴。</p>
+<p><strong>体系联动</strong>　空非可知之物：盗机不可见，正因其非一物。可见者相，不可见者机。</p>
+<p><strong>和合对照</strong></p>
+<table class="t">
+<thead>
+<tr class="header">
+<th>见地</th>
+<th>判定</th>
+<th>阐释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>一心追寻、窥探盗机，欲独占此秘</td>
+<td>合</td>
+<td>把不可见者做成可藏之物</td>
+</tr>
+<tr class="even">
+<td>观照体察，知其存在而不抓取</td>
+<td>和</td>
+<td>见而不取，知而不执</td>
+</tr>
+</tbody>
+</table>
+<h2 id="君子得之固躬小人得之轻命">君子得之固躬，小人得之轻命。</h2>
+<p><strong>字源溯源</strong>　固躬，安身、守身、养命；轻命，轻丧其身。</p>
+<p><strong>逐句深解</strong>　同样窥见这套盗机，路径完全两样。君子得之，知节制、守本分，用来安身守命；小人得之，心生贪求，妄图攫取造化、肆意用机，终至殒身。全篇最后的判语，落在人这一念之分。</p>
+<p><strong>体系联动</strong>　同一套理，落在「合」「和」两路，结局截然不同。法与器同，心与向异。</p>
+<p><strong>和合对照</strong></p>
+<table class="t">
+<thead>
+<tr class="header">
+<th>见地</th>
+<th>判定</th>
+<th>阐释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>得机就抓取、算计，以术驭造化</td>
+<td>合</td>
+<td>术成而命轻，得小而失大</td>
+</tr>
+<tr class="even">
+<td>得机而知止，守分寸，安身固躬</td>
+<td>和</td>
+<td>知而不为，机在而心不住</td>
+</tr>
+</tbody>
+</table>
+<p><strong>跨典互参</strong>　同是般若，菩萨用以度生，凡夫用以生贪。</p>
+<h2 class="ch" id="体系联动总表">体系联动总表</h2>
+<table class="t">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>本经名相</th>
+<th>所属三才</th>
+<th>对应五蕴／太极</th>
+<th>判</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>五贼</td>
+<td>天（法则）／地（承载）</td>
+<td>五蕴各蕴自带之自消力</td>
+<td>生杀同体，见两面</td>
+</tr>
+<tr class="even">
+<td>机（几）</td>
+<td>人（感应裁断）</td>
+<td>行蕴之发动处</td>
+<td>应而不造</td>
+</tr>
+<tr class="odd">
+<td>盗</td>
+<td>三才循环</td>
+<td>缘起互资，非一物可取</td>
+<td>取而有还</td>
+</tr>
+<tr class="even">
+<td>杀机</td>
+<td>天、地、人三极皆有</td>
+<td>灭相平等</td>
+<td>天地自变，人不添刀</td>
+</tr>
+<tr class="odd">
+<td>不神之神</td>
+<td>统摄三才之太极</td>
+<td>空性之照用</td>
+<td>不立相而自显</td>
+</tr>
+</tbody>
+</table>
+<h2 class="ch" id="和合总辨">和合总辨</h2>
+<p>《阴符经》全书判语，可收于两门：</p>
+<p><strong>合</strong>——看见五贼、三盗、盗机之后，心生算计，构图立界，欲以术驭造化。这是人为之合，术愈精则去道愈远，正是「小人得之轻命」一路。要注意：连「不争」也可以做成一种合——把清静做成可守之物，把不取做成姿态，仍是框。</p>
+<p><strong>和</strong>——照见五贼、三盗、生杀本是天道自然循环，不拒克、不执生。时至则应，时止则藏，不主动抓取盗机。这是君子固躬之路。和不是不作为，是不以己意代天则。</p>
+<blockquote class="sutra">
+<p>判别口诀：<strong>凡有一「我要如何」在前，即落合；凡只一「时至而应」在後，即近和。</strong>（「即近和」者，尚须不执此「和」，否则和亦成合。）</p>
+</blockquote>
+<h2 class="ch" id="跨典互参">跨典互参</h2>
+<h2 id="与道德经">与《道德经》</h2>
+<p>「反者道之动」，即五贼相制、生杀循环；「辅万物之自然而不敢为」，即不妄发人之杀机；「其安易持，其未兆易谋」，即中篇伏藏调护之功。</p>
+<h2 id="与庄子">与《庄子》</h2>
+<p>物化，即三盗循环之另一表达；「天地与我并生，万物与我为一」，即宇宙在乎手之正解；至人无己，方能不被盗机裹挟。</p>
+<h2 id="与周易">与《周易》</h2>
+<p>「几者动之微」，与本经之「机」同义；「时止则止，时行则行」，即动其机之正训；消息盈虚，即德与贼之两面。</p>
+<h2 id="与般若">与般若</h2>
+<p>凡所有相皆是生灭，故杀机、盗机皆是缘起之相；「应无所住而生其心」，即不神之所以神；「佛说A，即非A，是名A」：五贼者，即非五贼，是名五贼——名立而体空。</p>
+<h2 class="ch" id="附录一-古注对勘">附录一 · 古注对勘</h2>
+<p>只列关键分歧，不堆繁辞。</p>
+<p><strong>李筌（本注，正解基准）</strong></p>
+<blockquote class="sutra">
+<p>五行相生谓之德，相克谓之贼；贼，害也，害中为恩。盗，取也，循环相资。</p>
+</blockquote>
+<p>李筌的重心极清晰：德为生，贼为克，生克一体，贼非纯恶。他并不把五贼当成五类异物，就是五行的制化之用。本书以此为底。</p>
+<p><strong>张果（异解，存而不取）</strong></p>
+<blockquote class="sutra">
+<p>五贼者，天、地、物、神、人。</p>
+</blockquote>
+<p>这是另一支重要异说：不以五行解五贼，而以五类境相为贼。辨析：此路是向内修的心性喻解，非经文本义；若以张果为底，则与全篇「天生天杀、三盗三才」的天人框架脱节。故存为异说，不作正文正解。</p>
+<p><strong>朱熹（宋儒旁评）</strong></p>
+<blockquote class="sutra">
+<p>《阴符经》，只一个「机」字。天有自然之机，人不可妄造一机。</p>
+</blockquote>
+<p>朱子不取术数，把全篇收束在「不妄发」，正与本书「识机不造机」相契。</p>
+<h2 class="ch" id="附录二-全篇总辨">附录二 · 全篇总辨</h2>
+<p>两条常见歧路：</p>
+<p>一、<strong>权谋流</strong>。把盗机、五贼、杀机当成一套算计、掠夺、控御天地的术法，见机就抓，谋利为先。这是经中所说「小人得之轻命」：他看懂了循环，心却落在抓取，以人合天，强耦天道以遂私欲。</p>
+<p>二、<strong>避害流</strong>。见「贼、杀、盗」而生怖畏，只想避开一切克制、损耗、冲突，唯取生生滋养，厌弃代谢之杀。同样偏枯，不识生杀一体，不知贼即裁成之必需。</p>
+<p>本经的中正之路：<strong>承认五贼之克、三盗之取、天地杀机是本然实相；观之、识之，而不主动以私意发动杀机、掠夺盗机。时至则应，时止而藏。</strong>
+不是叫人什么都不做，是只承接天道已发之机，不自己凭空造机。</p>
+<blockquote class="sutra">
+<p>经旨收束：<strong>不拒天道之生杀，不起一己之杀机；明万物互资之盗，不起强取之盗心。</strong></p>
+</blockquote>
+<h2 class="ch" id="后记">后记</h2>
+<p><strong>成书现状</strong>　三章全文，逐句三十一组，附导读、凡例、字源总表、体系联动总表、和合总辨、古注对勘、全篇总辨，配譬喻图二。</p>
+<p><strong>底本说明</strong>　李筌三百字本为底，参敦煌残卷校字。通行本分三章旧题（神仙抱一、富国安民、强兵战胜），题从通行，不改经文。五贼、盗、杀三字，全书口径统一，见凡例第四。</p>
+<p><strong>何为不作</strong>　不作丹法术语解，不作权谋教程，不绘神像，不将五贼等同五行全体。</p>
+<p><strong>全书一句</strong>　识机而不造机，知盗而不妄盗；不与天争机，不与物争盗。</p>
+</main>
+  <div class="foot">润泽说 道可道之黄帝阴符经 · 通释 · 三章 · 附图二 · v1.0.0<br>不与天争机，不与物争盗</div>
+</div>
+</body>
+</html>
