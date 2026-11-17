@@ -1,0 +1,8 @@
+# 润泽说 道可道之黄帝阴符经
+
+> 《黄帝阴符经》三章通释：李筌三百字本为底，逐句解读，五贼、三盗、杀机三辨，附譬喻图。
+
+## 入口
+- 首页：https://q1z2q3-debug.github.io/daokedao-yinfujing/
+- 全本：https://q1z2q3-debug.github.io/daokedao-yinfujing/book.html
+- 仓库：https://github.com/q1z2q3-debug/daokedao-yinfujing
